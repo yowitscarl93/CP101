@@ -1,0 +1,6 @@
+Create a program that will compute the student's average.
+
+Subject:
+        Math
+        Science
+        English
