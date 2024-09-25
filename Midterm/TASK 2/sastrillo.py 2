@@ -1,0 +1,14 @@
+# Initialize an empty list to store names
+names = []
+
+# Prompt the user to enter 5 names
+for _ in range(5):
+    name = input("Enter a name: ")
+    names.append(name)
+
+# Print each name in uppercase using f-strings
+uppercase_names = [f"{name.upper()}" for name in names]
+
+# Display the uppercase names
+for name in uppercase_names:
+    print(name)
