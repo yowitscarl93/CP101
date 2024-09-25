@@ -1,16 +1,30 @@
-# Activity in programming 
-# create a code that will count all lower case,upper case,digits,and special symbols from given string.
-statement = "Hi My name is Gerald F. Mundia. I LOVE PLAYING MOBILE LEGEND! My favourite main heroes is beatrix 12345 matches!"
-total_char_in_the_statement = len(statement ) # calculate total characters 
-total_number_of_upper_case = sum(1 for char in statement if char.isupper()) #  calculate total number of upper char
-total_number_of_lower_case = sum(1 for char in statement if char.islower()) # calculate total number of lower char
-total_of_all_digits = sum(1 for char in statement if char.isdigit()) # calculate total number of digits
-total_of_special_char = sum(1 for char in statement if not char.isalnum() and not char.isspace()) # calculate total space 
+# Function to calculate salary based on office and years in service
+def calculate_salary(years, office):
+    # Define salary brackets based on years and office
+    if office == 'it':
+        if years >= 10:
+            return 10000
+        else:
+            return 5000
+    elif office == 'acct':
+        if years >= 10:
+            return 12000
+        else:
+            return 6000
+    elif office == 'hr':
+        if years >= 10:
+            return 15000
+        else:
+            return 7500
+    else:
+        return "Invalid office entered!"
 
-# will print all the total characters in specified areas
-print (statement)
-print ("Total of characters: ", total_char_in_the_statement)
-print ("Total number of upper case letters: ", total_number_of_upper_case)
-print ("Total number of lower case letters: ", total_number_of_lower_case)
-print ("Total number of all digits: ", total_of_all_digits)
-print ("Total of number of special characters: ", total_of_special_char)
+# Input from user for years in service and office
+years_in_service = int(input("Enter the number of years in service: "))
+office = input("Enter the office (it, acct, hr): ").lower()
+
+# Calculate the salary
+salary = calculate_salary(years_in_service, office)
+
+# Output the salary or error message
+print(f"Salary: {salary}")
