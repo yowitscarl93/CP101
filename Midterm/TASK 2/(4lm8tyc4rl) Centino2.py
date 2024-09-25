@@ -23,7 +23,7 @@ while True:
     if choice.lower() == "y" or choice == "Y":
         break
     
-    elif choice.lower() == "n" or choice == "Y":
+    elif choice.lower() == "n" or choice == "N":
         print("Exiting...")
         exit()
         
