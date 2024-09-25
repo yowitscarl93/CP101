@@ -9,8 +9,8 @@ def classify_number():
     if num == 0:
         print("The number is zero.")
     elif num > 0:
-        print("The number is positive.")
+        print("The number is positive[+].")
     else:
-        print("The number is negative.")
+        print("The number is negative[-].")
 
 classify_number()
