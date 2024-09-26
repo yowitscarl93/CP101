@@ -1,0 +1,22 @@
+happyString = "Happy 20th Birthday to @Stephree!!"
+
+lowerCase = 0
+upperCase = 0
+digitCount = 0
+specialCharacters = 0
+
+for happy in happyString:
+ 
+    if happy.islower():
+        lowerCase += 1
+    elif happy.isupper():
+        upperCase += 1  
+    elif happy.isdigit():
+        digitCount += 1       
+
+    else:
+        specialCharacters += 1
+print("Lowercase letters: ", lowerCase)
+print("Uppercase letters: ", upperCase)
+print("Digits: ", digitCount)
+print("Special Characters: ", specialCharacters)
