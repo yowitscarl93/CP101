@@ -1,0 +1,11 @@
+# create empty storage for data 
+storage = []
+
+# Collect 5 names from the user
+for loop in range(5):
+    lists = input(f"Enter name {loop + 1}: ")
+    storage.append(lists)
+
+# Print each name in uppercase
+for lists in storage:
+    print(lists.upper())
